@@ -1,0 +1,13 @@
+[package]
+name = "rotus"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.5.4" }
+tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+tower = { version = "0.4", features = ["util"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tower-http = { version = "0.3.0", features = ["trace"] }
